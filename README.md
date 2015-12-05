@@ -82,4 +82,10 @@ The added item is removed in AfterMethod function to make sure the cart is empty
   private static final String[] TEST_SEARCH_ITEMS = {"iPhone", "dvd", "socks", "tv", "toys", "iPhone"}
 ```
 
+## Future word
+-----------------------------------------------
+One of the challenging for UI testing using Selenium WebDriver is time issue, like page loading, refreshing and slow responding. I used WebDriverWait to add some implicit waiting into the test. However, these implicit waiting is performed based on the response from remote webdriver and the UI element. 
+
+This test case is implemented within two days with limited information from the webpage frame and codes. It covers several possible cases in the test scenario but not fully like if the product is sold out. If there's more time, I want to build a more complete test automation frames and encapsulate common used functions into classed.
+
 

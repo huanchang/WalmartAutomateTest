@@ -64,6 +64,7 @@ public class Util {
 
         int retries = 1;
 
+        // Try to click element for at most MAX_RETRYTIMES times just in case: element unclicable caused by slow page loading
         while(retries <= MAX_RETRYTIMES) {
             try {
                 element.click();
