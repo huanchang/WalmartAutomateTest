@@ -5,8 +5,32 @@ Test data used in this automate test is private Walmart account not allowed to b
 
 ##General Usage Guide
 -----------------------------------------------
+1. Clone the WalmartAutomateTest repository by 
+```
+    git clone https://github.com/huanchang/WalmartAutomateTest
+```
 
+2. Import project walmartinterviewproject into IntelliJ IDE.
+  * Open IntelliJ IDE. Probably you could also use Eclipse IDE, similar process to import maven project.
+  * Select "Import Project".
+  * Go to the project directory and Choose folder "walmartinterviewproject".
+  * Select "Import project from external model" and then select "Maven". 
+  * Checkout "Import Maven project automatically" and select "Next".
+  * Checkout "huanchang.walmart::walmartassignment:1.0-SNAPSHOT" and select "NEXT".
+  * Select "Next" and then "Finish".
 
+3. Compile project ocdes
+  * In header bar, click "Build" and then select "Make Project".
+  * In header bar, click "Build" and then select "Make module walmart assignment". Should see everything updated.
+
+4. Run automation testing
+  * In header bar, click "Run" and then select "Run..."
+  * Then, you should see only one runnable test "WalmartFrontEndTestng" in popup window. Select it or hit return button.
+  * Afterward, the automate test will start to run and a chrome browser should be opened then.
+  * The detail and log information will show in the Run window.
+
+After finishing all tests, the results will shown in Run window and the chrome browser will be closed automatically by automation test.
+![alt tag](https://github.com/huanchang/WalmartAutomateTest/blob/version1/Example_FinishTesting.png)
 
 ##Approach
 -----------------------------------------------
