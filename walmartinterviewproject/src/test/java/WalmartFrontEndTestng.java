@@ -302,6 +302,10 @@ public class WalmartFrontEndTestng  {
         driver.navigate().to("http://www.walmart.com/");
         // Login with test account
         login();
+
+
+        // Remove all items in cart before tests
+        cleanChart();
     }
 
     @BeforeMethod
