@@ -5,6 +5,8 @@ Test data used in this automate test is private Walmart account not allowed to b
 
 ##General Usage Guide
 -----------------------------------------------
+This project requires IntelliJ IDE or similar IDE and Chrome Browser. 
+
 1. Clone the WalmartAutomateTest repository by 
 ```
     git clone https://github.com/huanchang/WalmartAutomateTest
@@ -26,7 +28,7 @@ Test data used in this automate test is private Walmart account not allowed to b
 4. Run automation testing
   * In header bar, click "Run" and then select "Run..."
   * Then, you should see only one runnable test "WalmartFrontEndTestng" in popup window. Select it or hit return button.
-  * Afterward, the automate test will start to run and a chrome browser should be opened then.
+  * Afterward, the automate test will start to run and a chrome browser should be opened automatically then. Tests will be performed in that Chrome browser.
   * The detail and log information will show in the Run window.
 
 After finishing all tests, the results will shown in Run window and the chrome browser will be closed automatically by automation test.
