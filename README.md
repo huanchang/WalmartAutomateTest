@@ -1,5 +1,5 @@
 # WalmartAutomateTest
-This is a automation testing project for www.walmart.com. This project is build using Java, IntelliJ IDE, Maven and Selenium WebDriver. The automation testing covers the scenario: login account, search item, add item to cart and verify added item in cart. 
+This is a automation testing project for www.walmart.com. This project is build using Java, IntelliJ IDE, Maven and Selenium WebDriver. The automation testing covers the scenario: login account, search item, add item to cart and verify added item with quantity in cart. 
 Copyright by Huan Chang 12/04/2015.  
 Test data used in this automate test is private Walmart account not allowed to be used in any other circumstances. 
 
@@ -32,11 +32,9 @@ Test data used in this automate test is private Walmart account not allowed to b
 After finishing all tests, the results will shown in Run window and the chrome browser will be closed automatically by automation test.
 ![alt tag](https://github.com/huanchang/WalmartAutomateTest/blob/version1/Example_FinishTesting.png)
 
-##Approach
+##Test Scenario
 -----------------------------------------------
-My approach is to first run the software to be tested for sets of input files and command-line arguments, and save the output files. These output files serve as a test oracle, a means of determining whether a test has passed or failed.
-
-Then, I write the automated test covering the following scenario:
+I write the automated test covering the following scenario:
 * Login using existing account
 * Perform a search on home page from a pool of key words given below
 * Identify an item from the result set that you can add to cart
@@ -45,7 +43,7 @@ Then, I write the automated test covering the following scenario:
 
 ##Project Structure
 -----------------------------------------------
-This project is constructed using Maven. Here's an brief introduction of main files. 
+This project is constructed mainly using Maven and Selenium. Here's an brief introduction of main files. 
 
 * WalmartFrontEndTestng.java: core code of this automate test.
 * Util.java: reusable codes for handling web element operations
@@ -82,10 +80,7 @@ The added item is removed in AfterMethod function to make sure the cart is empty
   private static final String[] TEST_SEARCH_ITEMS = {"iPhone", "dvd", "socks", "tv", "toys", "iPhone"}
 ```
 
-## Future word
+## Conlusion and Future work
 -----------------------------------------------
-One of the challenging for UI testing using Selenium WebDriver is time issue, like page loading, refreshing and slow responding. I used WebDriverWait to add some implicit waiting into the test. However, these implicit waiting is performed based on the response from remote webdriver and the UI element. 
-
-This test case is implemented within two days with limited information from the webpage frame and codes. It covers several possible cases in the test scenario but not fully like if the product is sold out. If there's more time, I want to build a more complete test automation frames and encapsulate common used functions into classed.
-
-
+One of the challenging for UI testing using Selenium WebDriver is time issue, like page loading, refreshing and slow responding. I used WebDriverWait to add some implicit waiting which is performed based on the response from remote webdriver and the behavior of UI element.
+This test case is implemented within two days with limited information about the website frame and codes. It covers several possible cases in the test scenario but not fully like if the product is sold out. If there's more time, I want to build a more complete test automation frames and encapsulate common used functions into classes.
